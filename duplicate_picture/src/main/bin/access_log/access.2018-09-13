@@ -1,0 +1,3 @@
+2018-09-18 16:04:04,542 -REQUEST_ID: 1537257515|client IP: 10.33.68.106|request method: POST|request URL: /single-image-process/|request parameter: {u'pic_url': u'/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307'}|HTTP_CODE: 0|response time: 0.0709280967712|hash_value: 96957348cd916997|image url: /rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307|generate hash elapsed time: 0.0107967853546|
+2018-09-18 16:04:04,543 -REQUEST_ID:1537257515|client IP:10.33.68.106|request method:POST|request URL:/single-image-process/|request parameter:{"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307"}
+|HTTP_CODE1|response time:0.0709280967712

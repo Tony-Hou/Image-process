@@ -50,7 +50,7 @@ prefix = 'http://image.media.lianjia.com'
 subprefix = '!m_fit,w_300,h_300'
 # 根据url下载图片
 
-# 保存图像文件名的对立
+# 保存图像文件名的队列
 req_queue = Queue.Queue(256)
 download_pool = threadpool.ThreadPool(16)
 # request id
@@ -253,7 +253,6 @@ def single_image_process():
         process_log.info('request_id: %s, image url: %s, generate hash elapsed time: %s, response elapse time: %s,'
                          'hash_value: %s', request_id, img_url, gen_hash_elapsed_time, elapsed_time, hash_value)
         fd.close()
-        image.close()
     except Exception as e:
         exception_log.error('request_id: %s, image url: %s, Error', request_id, url, exc_info=True)
         ret_value = {

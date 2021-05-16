@@ -12,9 +12,7 @@ from __future__ import print_function
 from PIL import Image
 from io import BytesIO
 from flask import Flask, request, jsonify, Response
-from datetime import datetime, timedelta
 from multiprocessing.dummy import Pool as ThreadPool
-from apscheduler.schedulers.background import BackgroundScheduler
 import logging.handlers
 import os
 import sys
@@ -24,92 +22,44 @@ import time
 import json
 import requests as req
 import threading
-import math
 import datetime
 import shutil
 import glob
 
 # 访问图片前缀
-prefix = 'http://image.media.lianjia.com'
+domain = 'http://image.media.lianjia.com'
 subprefix = '!m_fit,w_300,h_300'
-# 根据url下载图片
-
-# 保存图像文件名的对立
-# req_queue = Queue.Queue(256)
-
 AK = 'HT4ASES5HLDBPFKAOEDD'
 SK = 'OMws9wMpOfknZm7JLi/zcb6aCEIGVejvneKl0hzp'
 # request id
 global request_id
-request_id = int(time.time())
+request_id = int(time.time() * 1000000)
 q = threading.Lock()
-global DAY_LOG_DIR
-# DAY_LOG_DIR = ""
+
 global APP_LOG_DIR
 # APP_LOG_DIR = os.environ['MATRIX_APPLOGS_DIR']
+# ACCESS_LOGS_PATH = os.environ['MATRIX_ACCESSLOGS_DIR']
 APP_LOG_DIR = "./"
-date = datetime.date.today().strftime("%Y%m%d")
-DAY_LOG_DIR = APP_LOG_DIR + date
-if not os.path.exists(DAY_LOG_DIR):
-    os.mkdir(DAY_LOG_DIR)
-else:
-    pass
 
-
-#定时整理日志
-def log_job():
-    date = datetime.date.today().strftime("%Y%m%d")
-    yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y%m%d')
-    log_subffix = '.' + yesterday
-    process_str = 'process' + log_subffix
-    exception_str = 'exception' + log_subffix
-    access_str = 'access' + log_subffix
-    access_new_str = access_str + '-access_log'
-    global DAY_LOG_DIR
-    DAY_LOG_DIR = APP_LOG_DIR + date
-    if not os.path.exists(DAY_LOG_DIR):
-        os.mkdir(DAY_LOG_DIR)
-    else:
-        pass
-    if glob.glob(process_str)[0] == "":
-        pass
-    else:
-        shutil.move(glob.glob(process_str)[0], DAY_LOG_DIR)
-    if glob.glob(exception_str)[0] == "":
-        pass
-    else:
-        shutil.move(glob.glob(exception_str)[0], DAY_LOG_DIR)
-    if glob.glob(access_str)[0] == "":
-        pass
-    else:
-        shutil.move(glob.glob(access_str)[0], access_new_str)
-
-scheduler = BackgroundScheduler()
-scheduler.add_job(log_job, 'cron', hour=1, minute=45)
-# scheduler.add_job(log_job, 'interval', minutes=1)
-scheduler.start()
-
-# 保存日志
-access_log = logging.getLogger("access log")
+process_log_filename = "process" + str(request_id)
+exception_log_filename = "exception" + str(request_id)
 process_log = logging.getLogger('process log')
 exception_log = logging.getLogger('exception log')
 formatter = logging.Formatter('%(asctime)s -%(message)s')
-access_handler = logging.handlers.TimedRotatingFileHandler('access', when='midnight')
-process_handler = logging.handlers.TimedRotatingFileHandler('process', when='midnight')
-exception_handler = logging.handlers.TimedRotatingFileHandler('exception', when='midnight')
-process_log.suffix = "%Y%m%d"
-exception_log.suffix = "%Y%m%d"
-access_log.suffix = "%Y%m%d"
+process_handler = logging.handlers.TimedRotatingFileHandler(process_log_filename, when='midnight')
+exception_handler = logging.handlers.TimedRotatingFileHandler(exception_log_filename, when='midnight')
+process_log.suffix = "%Y-%m-%d"
+exception_log.suffix = "%Y-%m-%d"
+
 process_handler.setFormatter(formatter)
 exception_handler.setFormatter(formatter)
-access_handler.setFormatter(formatter)
 
 process_log.setLevel(level=logging.INFO)
 exception_log.setLevel(level=logging.WARNING)
-access_log.setLevel(level=logging.INFO)
+
 process_log.addHandler(process_handler)
 exception_log.addHandler(exception_handler)
-access_log.addHandler(access_handler)
+
 # 解析请求中的数据把数据存放到队列中
 # Args:
 #     req_data: 请求数据
@@ -125,7 +75,7 @@ def download_and_generate_hash(img_url, result, ret, request_seq):
             ret.append({"pic_url": "", "state": 1})
             process_log.info('request_seq: %s|image url is: %s', request_seq, '')
             return 0
-        url = prefix + img_url + subprefix
+        url = domain + img_url + subprefix
         start_response = time.time()
         response = req.get(url)
         if 200 != response.status_code:
@@ -260,10 +210,11 @@ def single_image_process():
                        "errorMsg": "parameter error"
                     }
         return jsonify(ret_value)
-    url = prefix + img_url
+    url = domain + img_url
+    download_url = url + subprefix
     try:
         start_response = time.time()
-        response = req.get(url)
+        response = req.get(download_url)
         if 200 != response.status_code:
             ret_value = {
                            "errorCode": 2,
@@ -301,9 +252,9 @@ def single_image_process():
                          request_id, request.remote_addr, request.method, request.path,j_data, ret_value['errorCode'],
                          elapsed_time, hash_value, img_url, gen_hash_elapsed_time)
         access_log.info('REQUEST_ID: %s|client IP: %s|request method: %s|request URL: %s|request parameter: %s|'
-                         'HTTP_CODE: %d|response time: %s|hash_value: %s|image url: %s|generate hash elapsed time: %s|',
-                         request_id, request.remote_addr, request.method, request.path, j_data, ret_value['errorCode'],
-                         elapsed_time, hash_value, img_url, gen_hash_elapsed_time)
+                        'HTTP_CODE: %d|response time: %s|hash_value: %s|image url: %s|generate hash elapsed time: %s|',
+                        request_id, request.remote_addr, request.method, request.path, j_data, ret_value['errorCode'],
+                        elapsed_time, hash_value, img_url, gen_hash_elapsed_time)
         fd.close()
         image.close()
     except Exception as e:
@@ -325,7 +276,6 @@ def single_image_process():
 
 @app.route('/batch-image-process/', methods=['POST', 'GET'])
 def batch_image_process():
-
     process_log.info('logging test')
     global request_id
     q.acquire()
@@ -346,16 +296,16 @@ def batch_image_process():
                          '|response time:%s', request_id, request.remote_addr, request.method, request.path, data, 1,
                          (time.time() - start_time))
         access_log.info('REQUEST_ID:%s|client IP:%s|request method:%s|request URL:%s|request parameter:%s|HTTP_CODE:%d'
-                         '|response time:%s', request_id, request.remote_addr, request.method, request.path, data, 1,
-                         (time.time() - start_time))
+                        '|response time:%s', request_id, request.remote_addr, request.method, request.path, data, 1,
+                        (time.time() - start_time))
     hash_code_result = parse_data_task(data, request_id)
     elapsed_time = time.time() - start_time
     process_log.info('REQUEST_ID:%s|client IP:%s|request method:%s|request URL:%s|request parameter:%s|HTTP_CODE:%d|'
                      'response time:%s|req_size:%d', request_id, request.remote_addr, request.method, request.path, data,
                      json.loads(hash_code_result)['errorCode'], elapsed_time, len(hash_code_result))
     access_log.info('REQUEST_ID:%s|client IP:%s|request method:%s|request URL:%s|request parameter:%s|HTTP_CODE:%d|'
-                     'response time:%s|req_size:%d', request_id, request.remote_addr, request.method, request.path,
-                     data, json.loads(hash_code_result)['errorCode'], elapsed_time, len(hash_code_result))
+                    'response time:%s|req_size:%d', request_id, request.remote_addr, request.method, request.path,
+                    data, json.loads(hash_code_result)['errorCode'], elapsed_time, len(hash_code_result))
     return hash_code_result
 
 

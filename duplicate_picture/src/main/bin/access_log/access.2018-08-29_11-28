@@ -1,0 +1,160 @@
+2018-08-29 11:57:24,459 -REQUEST_ID:1535514992|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.000407218933105
+2018-08-29 11:57:24,566 -REQUEST_ID:1535514992|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.106589078903|req_size:1121
+2018-08-29 11:57:25,155 -REQUEST_ID:1535514993|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.000287055969238
+2018-08-29 11:57:25,259 -REQUEST_ID:1535514993|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.103491067886|req_size:1121
+2018-08-29 11:57:25,921 -REQUEST_ID:1535514994|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.000285148620605
+2018-08-29 11:57:26,227 -REQUEST_ID:1535514994|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.305162191391|req_size:1121
+2018-08-29 11:57:26,730 -REQUEST_ID:1535514995|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.000296115875244
+2018-08-29 11:57:26,835 -REQUEST_ID:1535514995|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.104074001312|req_size:1121
+2018-08-29 11:57:27,387 -REQUEST_ID:1535514996|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.000301122665405
+2018-08-29 11:57:27,492 -REQUEST_ID:1535514996|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.104438066483|req_size:1121
+2018-08-29 11:57:28,007 -REQUEST_ID:1535514997|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.00031304359436
+2018-08-29 11:57:28,337 -REQUEST_ID:1535514997|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.330408096313|req_size:1121
+2018-08-29 11:57:28,822 -REQUEST_ID:1535514998|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.000330924987793
+2018-08-29 11:57:28,926 -REQUEST_ID:1535514998|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.104001045227|req_size:1121
+2018-08-29 11:57:29,443 -REQUEST_ID:1535514999|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.00032901763916
+2018-08-29 11:57:29,547 -REQUEST_ID:1535514999|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.103895902634|req_size:1121

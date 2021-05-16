@@ -1,0 +1,20 @@
+2018-08-31 11:37:21,395 -REQUEST_ID:1535686633|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:1|response time:0.000454902648926
+2018-08-31 11:37:21,515 -REQUEST_ID:1535686633|client IP:127.0.0.1|request method:POST|request URL:/batch-image-process/|request parameter:{"params":
+  [{"pic_url": "/rent-user-avatar/93482aa1-64c5-4979-8f3c-17beee9e7454!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/93b0be58-65ff-47fd-bfe5-df552494705b!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/028b2c8b-bb1f-4ebc-8acf-fffb3f4c7929!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/3dcccaae-a166-450b-8c83-d58db19c7dfa!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/a63324a3-5e0b-4c99-ae01-fae4029e45e4!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/b1478a6e-07cc-475d-803a-170d6e9c0307!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/96490004-1e14-46ca-9a59-4fb4547e44af!m_fit,w_300,h_300"},
+  {"pic_url": "/rent-user-avatar/15b12518-6b6c-4a2a-ba40-bb63a7499485!m_fit,w_300,h_300"}]
+}|HTTP_CODE:0|response time:0.120260000229|req_size:1121
